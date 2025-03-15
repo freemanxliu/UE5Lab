@@ -15,6 +15,6 @@ UE5 相关的研究，解答写平时的疑惑
 | 特性    | VisibleAnywhere | VisibleInstanceOnly | VisibleDefaultsOnly  | EditAnywhere | EditInstanceOnly | EditDefaultsOnly |
 | -------- | ------- | ------- |  ------- | ------- | ------- |  ------- |
 | 可见性  | 可见 | 实例可见 | 蓝图可见 |可见 | 实例可见 | 蓝图可见 |
-| 可编辑范围 |不可编辑 | 不可编辑  | 不可编辑 |
+| 可编辑范围 |不可编辑 | 不可编辑  | 不可编辑 | 可编辑 | 实例可编辑 | 蓝图可编辑 |
 | 常见应用  | 数据容器，枚举类型 | 基础Actor |
-| 举例  | 玩家数据： FPlayerData | 玩家角色：AMyCharacter |
+| 举例  | | r |
