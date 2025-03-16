@@ -2,6 +2,23 @@
 UE5 相关的研究，解答写平时的疑惑
 
 ## C++ 
+### CRTP Curiously Recurring Template Pattern 奇异递归模板模式
+在UE4中，TSharedFromThis的用法属于C++设计模式中的奇异递归模板模式（Curiously Recurring Template Pattern，CRTP）​, 这种模式的特征是：​一个类通过继承模板类并**将自身作为模板参数传递**
+
+为何称为CRTP？
+CRTP的名称来源于其语法特性：
+
+1. ​递归性：子类将自身类型作为基类模板参数
+2. 模板化继承：基类**TSharedFromThis**是一个模板类
+3. ​编译期多态：通过静态类型推导实现功能，而非运行时虚函数机制
+
+
+在UE4中，TSharedFromThis通过CRTP实现安全共享指针管理，继承该类的对象可通过AsShared()获取自身的TSharedPtr，确保对象生命周期由智能指针管理，避免裸指针导致的悬垂引用。例如：
+
+``TSharedPtr<MyClass> SharedPtr = this->AsShared();``
+
+---
+
 ### BlueprintType vs Blueprintable
 | 特性    | BlueprintType | Blueprintable |
 | -------- | ------- | ------- |
