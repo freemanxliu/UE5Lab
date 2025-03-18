@@ -1,5 +1,11 @@
 # UE5Lab
 UE5 相关的研究，解答写平时的疑惑
+## Visual Studio 
+### UnrealVS插件
+1. 点击安装插件 UnrealEngine\Engine\Extras\UnrealVS\VS2022\UnrealVS.vsix
+2. 打开VS，右键点击工具栏区域（toolbar area），开启UnrealVS
+
+[using the unrealvs extension for unreal engine cplusplus projects](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-the-unrealvs-extension-for-unreal-engine-cplusplus-projects)
 
 ## C++ 
 ### CRTP Curiously Recurring Template Pattern 奇异递归模板模式
