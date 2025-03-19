@@ -1,15 +1,28 @@
 # UE5Lab
 UE5 相关的研究，解答写平时的疑惑
 
-## 窗口
+## Windows
 ### 无边框
 1. 修改项目设置
 ``
 [/Script/EngineSettings.GeneralProjectSettings]
 bUseBorderlessWindow=True
-``
 
 [UE4设置窗口无边框](https://blog.csdn.net/maxiaosheng521/article/details/103634958)
+
+### Windows编程
+#### RegisterClass: 
+窗口类的注册操作，这是Windows GUI程序创建窗口前的必要步骤。具体步骤如下:
+1. 填充`WNDCLASS`结构体，设定了窗口的基本行为特征
+2. 系统注册窗口类，将定义好的窗口类提交给操作系统内核，完成以下核心操作：
+    1. 在系统内部建立窗口类与消息处理函数`WndProc`的映射关系
+    2. 记录窗口的默认视觉属性（如光标、背景色等）
+    3. 分配唯一标识符，用于后续窗口创建时识别该窗口类
+
+https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles
+
+
+
 
 ## Visual Studio 
 ### UnrealVS插件
