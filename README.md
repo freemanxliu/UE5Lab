@@ -12,6 +12,7 @@ bUseBorderlessWindow=True
 [UE4设置窗口无边框](https://blog.csdn.net/maxiaosheng521/article/details/103634958)
 
 ### Splash Screen
+`` \Engine\Content\Splash\Splash.bmp ``
 NOSPLASH
 
 ### Windows编程
