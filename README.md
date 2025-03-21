@@ -36,6 +36,13 @@ https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles
 
 [using the unrealvs extension for unreal engine cplusplus projects](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-the-unrealvs-extension-for-unreal-engine-cplusplus-projects)
 
+## 编辑器
+### ViewMode
+
+1. 编辑器模式： `alt + 2`
+2. 运行时： `viewmode wireframe`
+
+
 ## C++ 
 ### CRTP Curiously Recurring Template Pattern 奇异递归模板模式
 在UE4中，TSharedFromThis的用法属于C++设计模式中的奇异递归模板模式（Curiously Recurring Template Pattern，CRTP）​, 这种模式的特征是：​一个类通过继承模板类并**将自身作为模板参数传递**
