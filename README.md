@@ -37,8 +37,7 @@ https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles
 [using the unrealvs extension for unreal engine cplusplus projects](https://dev.epicgames.com/documentation/en-us/unreal-engine/using-the-unrealvs-extension-for-unreal-engine-cplusplus-projects)
 
 ## 编辑器
-### ViewMode
-
+### Wireframe ViewMode
 1. 编辑器模式： `alt + 2`
 2. 运行时： `viewmode wireframe`
 
