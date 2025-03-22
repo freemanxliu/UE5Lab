@@ -41,6 +41,9 @@ https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles
 1. 编辑器模式： `alt + 2`
 2. 运行时： `viewmode wireframe`
 
+### RenderDoc
+1. Auto attach on startup
+2. RenderDoc executable path
 
 ## C++ 
 ### CRTP Curiously Recurring Template Pattern 奇异递归模板模式
