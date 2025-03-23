@@ -86,5 +86,10 @@ CRTP的名称来源于其语法特性：
 | -------- | ------- | ------- |  ------- | ------- |
 |​ **EditAnywhere**	    |​默认对象 + 实例对象 |​	需灵活调整的通用参数 |​	角色移动速度、材质参数| ... |
 | **EditInstanceOnly**	|​仅实例对象         |​	实例特有的参数      |​	场景中特定敌人的位置| TArray<TObjectPtr<AActor>> HiddenActors(USceneCaptureComponent) |​
-| **EditDefaultsOnly**	|​仅默认对象         |​	全局固定配置参数    |​	武器基础伤害、技能冷却时间| uint8 bReplicates(UActorComponent)|​
+| **EditDefaultsOnly**	|​仅默认对象         |​	全局固定配置参数    |​	武器基础伤害、技能冷却时间| uint8 bReplicates(UActorComponent)|
+
+
+## 材质
+https://dev.epicgames.com/documentation/en-us/unreal-engine/depth-material-expressions-in-unreal-engine?application_version=5.4#depthfade
+![image](https://github.com/freemanxliu/UE5Lab/blob/main/Pictures/DepthFade.jpg)​
 
