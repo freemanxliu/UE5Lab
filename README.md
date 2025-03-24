@@ -103,3 +103,8 @@ if (b) UNSAFE_MACRO(); else { a=2; } // 展开后语法错误
 https://dev.epicgames.com/documentation/en-us/unreal-engine/depth-material-expressions-in-unreal-engine?application_version=5.4#depthfade
 ![image](https://github.com/freemanxliu/UE5Lab/blob/main/Pictures/DepthFade.jpg)​
 
+## 渲染
+### 为什么一帧画面可以有多个FViewInfo
+主要是为了满足​多视图渲染需求：
+1. ​分屏与多人游戏：本地分屏模式下，每个玩家的独立视角会生成一个FViewInfo。例如，双人分屏需要两个视图
+2. VR双目渲染：VR设备需要为左右眼分别生成视图，每个眼睛对应一个FViewInfo，确保立体视觉效果
