@@ -63,6 +63,16 @@ CRTP的名称来源于其语法特性：
 
 ---
 
+
+### 宏展开
+防御性编码，用 do { ... } while (0) 包裹，防止宏在复杂条件语句中产生作用域问题
+
+``
+// 错误示例（不使用 do-while）
+#define UNSAFE_MACRO() if(cond) { a=1; }
+if (b) UNSAFE_MACRO(); else { a=2; } // 展开后语法错误
+``
+
 ### BlueprintType vs Blueprintable
 | 特性    | BlueprintType | Blueprintable |
 | -------- | ------- | ------- |
