@@ -26,9 +26,6 @@ NOSPLASH
 
 https://learn.microsoft.com/en-us/windows/win32/winmsg/window-class-styles
 
-
-
-
 ## Visual Studio 
 ### UnrealVS插件
 1. 点击安装插件 UnrealEngine\Engine\Extras\UnrealVS\VS2022\UnrealVS.vsix
@@ -98,6 +95,9 @@ if (b) UNSAFE_MACRO(); else { a=2; } // 展开后语法错误
 | **EditInstanceOnly**	|​仅实例对象         |​	实例特有的参数      |​	场景中特定敌人的位置| TArray<TObjectPtr<AActor>> HiddenActors(USceneCaptureComponent) |​
 | **EditDefaultsOnly**	|​仅默认对象         |​	全局固定配置参数    |​	武器基础伤害、技能冷却时间| uint8 bReplicates(UActorComponent)|
 
+
+## 输入系统
+UE5 -- EnhancedInput(增强输入系统): https://zhuanlan.zhihu.com/p/470949422
 
 ## 材质
 https://dev.epicgames.com/documentation/en-us/unreal-engine/depth-material-expressions-in-unreal-engine?application_version=5.4#depthfade
