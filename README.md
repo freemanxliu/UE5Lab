@@ -108,3 +108,8 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/depth-material-expre
 主要是为了满足​多视图渲染需求：
 1. ​分屏与多人游戏：本地分屏模式下，每个玩家的独立视角会生成一个FViewInfo。例如，双人分屏需要两个视图
 2. VR双目渲染：VR设备需要为左右眼分别生成视图，每个眼睛对应一个FViewInfo，确保立体视觉效果
+
+## 移动端
+### 贴图格式
+1. Vulkan -> VulkanDevice.cpp -> ``MapFormatSupport(PF_G8, ...)``
+2. OpenGL -> OpenGLDevice.cpp -> ``SetupTextureFormat(PF_G8, ...)``
