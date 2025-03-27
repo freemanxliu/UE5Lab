@@ -111,5 +111,6 @@ https://dev.epicgames.com/documentation/en-us/unreal-engine/depth-material-expre
 
 ## 移动端
 ### 贴图格式
-1. Vulkan -> VulkanDevice.cpp -> ``MapFormatSupport(PF_G8, ...)``
-2. OpenGL -> OpenGLDevice.cpp -> ``SetupTextureFormat(PF_G8, ...)``
+1. Vulkan: VulkanDevice.cpp -> ``MapFormatSupport(PF_G8, ...)``
+2. OpenGL: OpenGLDevice.cpp -> ``SetupTextureFormat(PF_G8, ...)``
+3. D3D12: D3D12RHI.cpp -> ``GPixelFormats[PF_G8].PlatfromFarmat = ``
